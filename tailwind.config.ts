@@ -57,6 +57,14 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        education: {
+          blue: "hsl(var(--education-blue))",
+          green: "hsl(var(--education-green))",
+          orange: "hsl(var(--education-orange))",
+          pink: "hsl(var(--education-pink))",
+          purple: "hsl(var(--education-purple))",
+          yellow: "hsl(var(--education-yellow))",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",

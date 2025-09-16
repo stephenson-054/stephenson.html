@@ -17,8 +17,16 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 222.2 47.4% 11.2%;
+    --primary: 259 94% 51%;
     --primary-foreground: 210 40% 98%;
+    
+    /* Educational color palette */
+    --education-blue: 217 91% 60%;
+    --education-green: 142 76% 36%;
+    --education-orange: 25 95% 53%;
+    --education-pink: 330 81% 60%;
+    --education-purple: 259 94% 51%;
+    --education-yellow: 48 96% 53%;
 
     --secondary: 210 40% 96.1%;
     --secondary-foreground: 222.2 47.4% 11.2%;
