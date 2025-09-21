@@ -1,8 +1,39 @@
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar"
 import { AppSidebar } from "@/components/AppSidebar"
+import { useLocation } from "react-router-dom"
 import Dashboard from "./Dashboard"
+import Courses from "./Courses"
+import Students from "./Students"
+import CodeEditor from "./CodeEditor"
+import Games from "./Games"
+import Leaderboard from "./Leaderboard"
+import Settings from "./Settings"
 
 const Index = () => {
+  const location = useLocation()
+  const currentPath = location.pathname
+
+  const renderPage = () => {
+    switch (currentPath) {
+      case '/courses':
+        return <Courses />
+      case '/students':
+        return <Students />
+      case '/editor':
+        return <CodeEditor />
+      case '/games':
+        return <Games />
+      case '/leaderboard':
+        return <Leaderboard />
+      case '/admin/users':
+        return <Students />
+      case '/settings':
+        return <Settings />
+      default:
+        return <Dashboard />
+    }
+  }
+
   return (
     <SidebarProvider>
       <div className="min-h-screen flex w-full">
@@ -20,7 +51,7 @@ const Index = () => {
             </div>
           </header>
           <main className="flex-1">
-            <Dashboard />
+            {renderPage()}
           </main>
         </div>
       </div>
